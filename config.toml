@@ -1,4 +1,39 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://strawberryoolongtea.github.io/'
 languageCode = 'en-us'
-title = '苺ウーロン茶'
+title = 'strawberry 烏龍茶'
 theme = "hugo-theme-tokiwa"
+
+disqusShortname = "strawberryoolongtea"
+
+[params]
+description = """
+Der Vogel kämpft sich aus dem Ei
+"""
+math = true # for introducing $KaTEX$
+env = "production" # for Google Analytics and DISQUS.
+useChineseFonts = true # for font Noto Serif etc.
+bannerFont = "fonts/exampleFont" # custom your own font for the title.
+postDateFormat = "2006-1-2" # override custom date format posts.
+
+[menu]
+# Shown in the side menu.
+  [[menu.main]]
+    name = "About"
+    weight = 1
+    url = "/about/"
+  [[menu.main]]
+    name = "Categories"
+    weight = 2
+    identifier = "post"
+    url = "/categories/"
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+[social]
+github="http://github.com/strawberryoolongtea"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
