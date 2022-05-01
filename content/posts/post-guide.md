@@ -1,16 +1,16 @@
 ---
 author: "strawberry oolong tea"
-title: "Post Guide"
+title: "Hugo Post Guide"
 date: 2022-04-30T23:14:55+09:00
 description: "How to create hugo blog"
 draft: true
-categories: [TIL]
-tags: [guide, helloworld]
+categories: [Guide]
+tags: [Today I Learned, SSG]
 aliases: ["migrate-from-jekyl"]
 toc: true
 ---
 
-# Create Hugo Blog
+## Create Hugo Blog
 
 휴고 블로그를 만드는 방법을 안내합니다.
 휴고 프로젝트를 생성하는 방법부터 콘텐츠는 어떻게 추가하는지 커스터마이징은 어떻게 하는지 이야기합니다.
@@ -19,13 +19,13 @@ toc: true
 
 아래부터 이어지는 방법론은 Mac 환경 및 [Tokiwa](https://github.com/heyeshuang/hugo-theme-tokiwa) 테마가 적용된 블로그를 기준으로 작성되었습니다. 윈도우 환경이나 다른 테마의 사용 방법과는 일부 차이가 있을 수 있습니다.
 
-## Install Hugo
+### Install Hugo
 
 ```
 brew install hugo
 ```
 
-## create new site
+### Create New Project
 
 새로운 휴고 프로젝트를 생성합니다. 여기서는 `test-blog` 라는 프로젝트를 만들겠습니다.
 
@@ -82,6 +82,34 @@ git submodule add https://github.com/heyeshuang/hugo-theme-tokiwa.git themes/hug
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+```
+
+루트에서
+
+```
+hugo new posts/javascript-cheat-sheet.md
+```
+
+```shell
+# default
+---
+title: "Javascript Cheat Sheet"
+date: 2022-05-01T12:52:10+09:00
+draft: true
+---
+
+# front matter
+---
+title: "Post Guide"
+date: 2022-04-30T23:14:55+09:00
+draft: true
+author: "strawberry oolong tea"
+description: "How to create hugo blog"
+categories: [TIL]
+tags: [guide, helloworld]
+aliases: ["migrate-from-jekyl"]
+toc: true
+---
 ```
 
 # This is heading1
