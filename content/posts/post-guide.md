@@ -10,7 +10,7 @@ aliases: ["migrate-from-jekyl"]
 toc: true
 ---
 
-## Create Hugo Blog
+## Start Hugo Blog
 
 휴고 블로그를 만드는 방법을 안내합니다.
 휴고 프로젝트를 생성하는 방법부터 콘텐츠는 어떻게 추가하는지 커스터마이징은 어떻게 하는지 이야기합니다.
@@ -52,7 +52,7 @@ hugo new site test-blog
 └── themes
 ```
 
-새롭게 생성한 프로젝트의 루트에서 깃을 초기화하고 원하는 테마의 서브모듈을 추가합니다.
+새롭게 생성한 프로젝트의 루트에서 깃을 초기화하고 원하는 테마의 [**submodule**](https://git-scm.com/book/en/v2/Git-Tools-Submodules)을 추가합니다.
 
 ```
 cd {project name}
@@ -60,7 +60,7 @@ git init
 git submodule add {git repository} {path}
 ```
 
-휴고 블로그 테마는 [여기](https://themes.gohugo.io/)에서 확인할 수 있습니다.
+휴고 블로그 테마는 [**themes.gohugo.io**](https://themes.gohugo.io/)에서 확인할 수 있습니다.
 
 ```bash
 cd test-blog
@@ -68,7 +68,7 @@ git init
 git submodule add https://github.com/heyeshuang/hugo-theme-tokiwa.git themes/hugo-theme-tokiwa
 ```
 
-**submodule**을 추가하고 나면 `.gitmodules` 파일이 다음과 같이 추가된 것을 확인할 수 있습니다.
+서브모듈을 추가하고 나면 `.gitmodules` 파일이 다음과 같이 추가된 것을 확인할 수 있습니다.
 
 ```
 [submodule "themes/hugo-theme-tokiwa"]
@@ -76,13 +76,17 @@ git submodule add https://github.com/heyeshuang/hugo-theme-tokiwa.git themes/hug
 	url = https://github.com/heyeshuang/hugo-theme-tokiwa.git
 ```
 
-`config.toml` 파일을 다음과 같이 작성합니다.
+### Configure Blog
+
+프로젝트의 루트에서 `config.toml` 파일을 확인할 수 있습니다.
 
 ```
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 ```
+
+## Create New Post
 
 루트에서
 
@@ -98,11 +102,8 @@ date: 2022-05-01T12:52:10+09:00
 draft: true
 ---
 
-# front matter
+# front matter boilerplate
 ---
-title: "Post Guide"
-date: 2022-04-30T23:14:55+09:00
-draft: true
 author: "strawberry oolong tea"
 description: "How to create hugo blog"
 categories: [TIL]

@@ -22,14 +22,22 @@ postDateFormat = "2006-1-2" # override custom date format posts.
     weight = 1
     url = "/about/"
   [[menu.main]]
-    name = "Categories"
+    name = "Projects"
     weight = 2
+    url = "/projects/"
+  [[menu.main]]
+    name = "Posts"
+    weight = 3
+    url = "/posts/"
+  [[menu.main]]
+    name = "Categories"
+    weight = 4
     identifier = "post"
     url = "/categories/"
   [[menu.main]]
     name = "Tags"
     url = "/tags/"
-    weight = 3
+    weight = 5
 
 [social]
 github="http://github.com/strawberryoolongtea"
@@ -37,3 +45,6 @@ github="http://github.com/strawberryoolongtea"
 [taxonomies]
    tag = "tags"
    category = "categories"
+
+[markup.goldmark.renderer]
+unsafe = true
