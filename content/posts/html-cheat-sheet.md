@@ -1,10 +1,10 @@
 ---
-title: "Html Cheat Sheet"
+title: "HTML Canvas"
 date: 2022-05-02T11:09:24+09:00
 draft: true
 author: "strawberry oolong tea"
-description: "Utilities when I use HTML"
-categories: [Cheat Sheet]
+description: ""
+categories: [Programming]
 tags: [What I Learned, HTML]
 aliases: ["migrate-from-jekyl"]
 toc: true

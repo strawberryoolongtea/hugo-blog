@@ -105,9 +105,9 @@ draft: true
 # front matter boilerplate
 ---
 author: "strawberry oolong tea"
-description: "How to create hugo blog"
-categories: [TIL]
-tags: [guide, helloworld]
+description: ""
+categories: []
+tags: []
 aliases: ["migrate-from-jekyl"]
 toc: true
 ---
