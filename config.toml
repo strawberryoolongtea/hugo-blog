@@ -1,6 +1,6 @@
 baseURL = 'https://strawberryoolongtea.github.io/'
 languageCode = 'en-us'
-title = 'strawberry 烏龍茶'
+title = 'strawberry'
 theme = "hugo-theme-tokiwa"
 
 disqusShortname = "strawberryoolongtea"
