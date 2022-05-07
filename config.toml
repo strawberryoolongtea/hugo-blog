@@ -1,4 +1,4 @@
-baseURL = 'https://strawberryoolongtea.github.io/'
+baseURL = 'https://strawberryoolongtea.github.io/about'
 languageCode = 'en-us'
 title = 'strawberry'
 theme = "hugo-theme-tokiwa"

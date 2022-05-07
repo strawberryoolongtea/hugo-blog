@@ -86,12 +86,20 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 ```
 
+원하는 테마에 맞게 다음과 같이 설정합니다.
+
+```
+baseURL = '' // 테마에 따라 다르겠지만 Tokiwa 테마에서 이 부분은 좌측 상단의 블로그 제목 위치의 링크 주소입니다.
+```
+
 ## Create New Post
 
 루트에서
 
 ```
+
 hugo new posts/javascript-cheat-sheet.md
+
 ```
 
 ```shell
