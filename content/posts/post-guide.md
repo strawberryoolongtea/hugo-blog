@@ -21,6 +21,10 @@ toc: true
 
 ### Install Hugo
 
+패키지 관리 시스템인 Homebrew를 통해 Hugo 패키지를 설치합니다.
+
+Homebrew 외에 다양한 방법들이 [여기](https://gohugo.io/getting-started/installing/#quick-install)에 있습니다.
+
 ```
 brew install hugo
 ```
@@ -88,9 +92,17 @@ title = 'My New Hugo Site'
 
 원하는 테마에 맞게 다음과 같이 설정합니다.
 
+`baseURL`은 루트의 경로를 나타냅니다. 블로그에서 다음과 같이 사용됩니다. [관련한 글](https://golangkorea.github.io/post/hugo-intro/content-basic/)을 읽어보면 도움이 될 수 있습니다.
+
 ```
-baseURL = '' // 테마에 따라 다르겠지만 Tokiwa 테마에서 이 부분은 좌측 상단의 블로그 제목 위치의 링크 주소입니다.
+|-----baseURL-----|section|
+https://example.org/posts
 ```
+
+`languageCode`는 [RFC 5646에 정의된 언어 태그](https://gohugo.io/getting-started/configuration/#languagecode)로 블로그에 사용될 언어의 [RSS Language Code를 생성할 때 사용](https://github.com/gohugoio/hugo/issues/349)됩니다.
+RSS Language Codes는 [여기](https://www.rssboard.org/rss-language-codes)에서 확인할 수 있습니다.
+
+`title`에 원하는 블로그 제목을 설정할 수 있습니다.
 
 ## Create New Post
 
