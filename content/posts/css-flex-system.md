@@ -1,5 +1,11 @@
 ---
-title: "CSS 플렉스"
+title: "CSS Flexbox"
 date: 2022-05-04T15:24:40+09:00
 draft: true
 ---
+
+CSS 플렉스 시스템은
+
+[CSS Tricks Reference](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+## Background

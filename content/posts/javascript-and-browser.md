@@ -4,8 +4,8 @@ date: 2022-05-01T12:52:10+09:00
 draft: true
 author: "strawberry oolong tea"
 description: ""
-categories: [Programming]
-tags: [What I Learned, Javascript]
+categories: [Books]
+tags: [What I Learned, Javascript, Javascript Deep Dive]
 aliases: ["migrate-from-jekyl"]
 toc: true
 ---
@@ -30,7 +30,7 @@ toc: true
 
 URL<sup>Uniform Resource Locator</sup>은 서버가 제공되는 환경에 존재하는 파일의 위치를 말합니다.
 
-`https://www.example.com`
+<!-- `https://www.example.com` -->
 
 [^1]: 렌더링은 HTML, CSS, 자바스크립트로 작성된 문서를 파싱하여 브라우저에 시각적으로 출력하는 것을 말합니다.
 [^2]: 파싱은 프로그래밍 언어로 작성된 텍스트 문서를 해석하고 실행하기 위해 텍스트 문서의 문자열을 토큰으로 분해하고 토큰에 문법적 의미와 구조를 반영하여 트리 구조의 자료구조인 파스 트리를 생성하는 일련의 과정을 말합니다. 여기서 토큰은 문법적으로 더는 나눌 수 없는 코드의 기본 요소를 의미합니다. 일반적으로 파싱이 완료된 후에 파스 트리를 기반으로 중간 언어인 [바이트코드](https://ko.wikipedia.org/wiki/%EB%B0%94%EC%9D%B4%ED%8A%B8%EC%BD%94%EB%93%9C)를 생성하고 실행합니다.

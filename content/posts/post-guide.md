@@ -15,15 +15,15 @@ toc: true
 휴고 블로그를 만드는 방법을 안내합니다.
 휴고 프로젝트를 생성하는 방법부터 콘텐츠는 어떻게 추가하는지 커스터마이징은 어떻게 하는지 이야기합니다.
 
-자세한 사항은 [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/) 및 [Hugo Documentation](https://gohugo.io/documentation/)를 확인하세요.
+자세한 사항은 [**Hugo Quick Start**](https://gohugo.io/getting-started/quick-start/) 및 [**Hugo Documentation**](https://gohugo.io/documentation/)를 확인하세요.
 
-아래부터 이어지는 방법론은 Mac 환경 및 [Tokiwa](https://github.com/heyeshuang/hugo-theme-tokiwa) 테마가 적용된 블로그를 기준으로 작성되었습니다. 윈도우 환경이나 다른 테마의 사용 방법과는 일부 차이가 있을 수 있습니다.
+아래부터 이어지는 방법론은 Mac 환경 및 [**Tokiwa**](https://github.com/heyeshuang/hugo-theme-tokiwa) 테마가 적용된 블로그를 기준으로 작성되었습니다. 윈도우 환경이나 다른 테마의 사용 방법과는 일부 차이가 있을 수 있습니다.
 
 ### Install Hugo
 
 패키지 관리 시스템인 Homebrew를 통해 Hugo 패키지를 설치합니다.
 
-Homebrew 외에 다양한 방법들이 [여기](https://gohugo.io/getting-started/installing/#quick-install)에 있습니다.
+Homebrew 외에 다양한 방법들이 [**여기**](https://gohugo.io/getting-started/installing/#quick-install)에 있습니다.
 
 ```
 brew install hugo
@@ -64,7 +64,7 @@ git init
 git submodule add {git repository} {path}
 ```
 
-휴고 블로그 테마는 [**themes.gohugo.io**](https://themes.gohugo.io/)에서 확인할 수 있습니다.
+휴고 테마는 [**themes.gohugo.io**](https://themes.gohugo.io/)에서 확인할 수 있습니다.
 
 ```bash
 cd test-blog
@@ -82,7 +82,7 @@ git submodule add https://github.com/heyeshuang/hugo-theme-tokiwa.git themes/hug
 
 ### Configure Blog
 
-프로젝트의 루트에서 `config.toml` 파일을 확인할 수 있습니다.
+프로젝트의 루트에서 `config.toml` 파일을 확인할 수 있습니다. 이 파일에서 프로젝트와 관련한 다양한 설정을 할 수 있습니다. 자세한 방법은 [**여기**](https://gohugo.io/getting-started/configuration/)를 확인하세요.
 
 ```
 baseURL = 'http://example.org/'
@@ -90,29 +90,69 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 ```
 
-원하는 테마에 맞게 다음과 같이 설정합니다.
-
-`baseURL`은 루트의 경로를 나타냅니다. 블로그에서 다음과 같이 사용됩니다. [관련한 글](https://golangkorea.github.io/post/hugo-intro/content-basic/)을 읽어보면 도움이 될 수 있습니다.
+`baseURL`은 루트의 경로를 나타냅니다. 프로젝트에서 다음과 같이 사용됩니다. [**관련한 글**](https://golangkorea.github.io/post/hugo-intro/content-basic/)을 읽어보면 도움이 될 수 있습니다.
 
 ```
 |-----baseURL-----|section|
 https://example.org/posts
 ```
 
-`languageCode`는 [RFC 5646에 정의된 언어 태그](https://gohugo.io/getting-started/configuration/#languagecode)로 블로그에 사용될 언어의 [RSS Language Code를 생성할 때 사용](https://github.com/gohugoio/hugo/issues/349)됩니다.
-RSS Language Codes는 [여기](https://www.rssboard.org/rss-language-codes)에서 확인할 수 있습니다.
+`languageCode`는 [**RFC 5646에 정의된 언어 태그**](https://gohugo.io/getting-started/configuration/#languagecode)로 프로젝트에 사용될 언어의 [**RSS Language Code를 생성할 때 사용**](https://github.com/gohugoio/hugo/issues/349)됩니다.
+RSS Language Codes는 [**여기**](https://www.rssboard.org/rss-language-codes)에서 확인할 수 있습니다.
 
-`title`에 원하는 블로그 제목을 설정할 수 있습니다.
+`title`에 원하는 프로젝트 제목을 설정할 수 있습니다.
+
+원하는 테마에 맞게 다음과 같이 설정합니다.
+
+```shell
+baseURL = 'http://example.org/'
+languageCode = 'ko'
+title = 'test-blog'
+theme = 'hugo-theme-tokiwa'
+```
 
 ## Create New Post
 
-루트에서
+프로젝트에 새로운 포스트를 생성해 보겠습니다. 터미널의 루트 경로에서 다음과 같이 입력합니다.
+
+```
+hugo new posts/myFirstPost.md
 
 ```
 
-hugo new posts/javascript-cheat-sheet.md
+`content` 폴더 하위로 다음과 같이 새로운 콘텐츠가 생성됩니다.
 
 ```
+.
+└── posts
+    └── myFirstPost.md
+```
+
+```shell
+# My First Post Front Matter from myFirstPost.md file
+---
+title: "MyFirstPost"
+date: 2022-05-12T16:01:43+09:00
+draft: true
+---
+```
+
+`.md` 파일을 생성할 때 `my-second-post.md`로 작성하면 `-` 기호를 기준으로 띄어쓰기가 적용된 타이틀의 [**Front Matter**](https://gohugo.io/content-management/front-matter)가 생성됩니다.
+
+```shell
+# My Second Post Front Matter from my-second-post.md file
+---
+title: "My Second Post"
+date: 2022-05-12T16:06:17+09:00
+draft: true
+---
+```
+
+Front Matter 아래로 마크다운 문법을 활용해 원하는 내용으로 자유롭게 작성하세요. 문법이 헷갈린다면 [**Cheat Sheet**](https://www.markdownguide.org/cheat-sheet/)을 확인하세요.
+
+## Start Hugo Server
+
+## My Boilerplate
 
 ```shell
 # default
@@ -131,34 +171,4 @@ tags: []
 aliases: ["migrate-from-jekyl"]
 toc: true
 ---
-```
-
-# This is heading1
-
-## This is heading2
-
-### This is heading3
-
-This is paragraph
-
-자바스크립트
-
-> 타입스크립트
-
-```
-
-console.log("Hello world");
-
-```
-
-**hello**
-
-`hello`
-
-<mark>hello</mark>
-
-<mark>salamanders</mark>
-
-```
-
 ```

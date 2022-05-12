@@ -1,13 +1,13 @@
 baseURL = 'https://strawberryoolongtea.github.io/'
 languageCode = 'en-us'
-title = 'strawberry'
+title = "🍓 Oolong Tea"
 theme = "hugo-theme-tokiwa"
 
 disqusShortname = "strawberryoolongtea"
 
 [params]
 description = """
-☪︎ Der Vogel kämpft sich aus dem Ei ✦ 태어나려는 자는 하나의 세계를 깨뜨려야 한다
+☪︎ Der Vogel kämpft sich aus dem Ei ✦
 """
 math = true # for introducing $KaTEX$
 env = "production" # for Google Analytics and DISQUS.
