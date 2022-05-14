@@ -1,7 +1,13 @@
 ---
+author: "strawberry oolong tea"
 title: "CSS Flexbox"
 date: 2022-05-04T15:24:40+09:00
 draft: true
+description: ""
+categories: [Programming]
+tags: [What I Learned, CSS]
+aliases: ["migrate-from-jekyl"]
+toc: true
 ---
 
 CSS 플렉스 박스 레이아웃 모듈은
