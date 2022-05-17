@@ -1,6 +1,6 @@
 ---
 title: "About me"
-date: 2022-05-01T10:54:30+09:00
+date: 1992-09-04T10:54:30+09:00
 description: A self-introduction
 draft: true
 ---

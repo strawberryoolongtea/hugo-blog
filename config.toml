@@ -1,6 +1,6 @@
 baseURL = 'https://strawberryoolongtea.github.io/'
 languageCode = 'en-us'
-title = "🍓 Oolong Tea"
+title = "Strawberry ウーロン茶"
 theme = "hugo-theme-tokiwa"
 
 disqusShortname = "strawberryoolongtea"
@@ -46,5 +46,8 @@ github="http://github.com/strawberryoolongtea"
    tag = "tags"
    category = "categories"
 
-[markup.goldmark.renderer]
-unsafe = true
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = "monokai"
